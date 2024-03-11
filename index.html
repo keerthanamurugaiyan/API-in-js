@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="">
+
+    <div class="container-fluid justify-content-center align-self-center d-flex">
+
+        <form action="" class="form rounded-4 mt-5 p-5 mb-5 justify-content-center" id="form">
+            <h1 class="text-center display- fw-bold">Register Form</h1>
+
+            <div class="form-group row mt-4">
+                <label for="name" class="fw-bold">Name :</label>
+                <input id="name" type="text" class="form-control" placeholder="Enter your name">
+                <div class="error text-danger" id="nameError"></div>
+            </div>
+
+            <div class="form-group row mt-4">
+                <label for="email" class="fw-bold">Email :</label>
+                <input id="email" class="form-control" placeholder="Enter your email">
+                <div class="error text-danger" id="emailError"></div>
+            </div>
+
+            <div class="form-group row mt-4">
+                <label for="date of birth" class="fw-bold">DOB :</label>
+                <input id="dob" type="date" class="form-control" placeholder="Enter your DOB">
+                <div class="error text-danger" id="dobError"></div>
+            </div>
+
+            <div class="form-group row mt-4">
+                <label for="phone number" class="fw-bold">Phone Number :</label>
+                <input id="phonum" type="tel" class="form-control" placeholder="Enter your number">
+                <div class="error text-danger" id="phoError"></div>
+            </div>
+
+            <div class="form-group mt-5">
+                <label for="gender" class="fw-bold">Gender :</label>
+                <input id="maleg" value="male" type="radio" name="gender" class="mx-3">     
+                <label for="male">Male</label>
+                <input id="femaleg" value="female" type="radio" name="gender" class="mx-3">
+                <label for="female">Female</label>
+                <div class="error text-danger" id="genderError"></div>
+            </div>
+
+            <div class="form-group mt-4 row">
+                <label for="language" class="fw-bold">Language :</label>
+                <input list="mozhi" id="lang" class="form-control" placeholder="Enter your language">
+                <datalist id="mozhi" >
+                    <option value="Tamil"></option>
+                    <option value="English"></option>
+                    <option value="Malayalam"></option>
+                    <option value="Telugu"></option>
+                    <option value="Hindi"></option>
+                    <option value="Spanish"></option>
+                    <option value="French "></option>
+                    <option value="Bengali "></option>
+                    <option value="Russian "></option>
+                </datalist>
+                <div class="error text-danger" id="lanError"></div>
+            </div>
+
+            <div class="form-group row mt-4">
+                <label for="password" class="fw-bold">Password :</label>
+                <input id="pass" type="password" class="form-control" placeholder="Enter your Password">
+                <div class="error text-danger" id="passError"></div>
+            </div>
+
+            <div class="form-group row mt-4">
+                <label for="conpassword" class="fw-bold">Confirm Password :</label>
+                <input id="conpass" type="password" class="form-control " placeholder="confirm your password">
+                <div class="error text-danger" id="conError"></div>
+            </div>
+
+            <div class="form-group mt-4">
+                <label for="" class="fw-bold">Status :</label>
+                <input id="present" type="checkbox" name="registor" class="mx-3">
+                <label for="">present</label>
+                <div class="error text-danger" id="registorError"></div>
+            </div>
+
+            <div class="">
+                <button id="btn" class="btn fw-bold mt-5">Submit</button>
+            </div>
+        
+        </form>
+
+        
+    </div>
+
+
+    <script src="main.js"></script>
+
+
+</body>
+</html>
