@@ -40,7 +40,7 @@ form.addEventListener('submit',function validateForm(event) {
     }
 
     else if (!emailCon.test(email)) {
-        document.getElementById("emailError").innerHTML="Please enter valid email";
+        document.getElementById("emailError").innerHTML="Email address is invalid";
         document.getElementById("email").style.border="2px solid red";
     }
     
